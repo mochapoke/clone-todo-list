@@ -11,4 +11,4 @@ make a to-do-list by vanila JS
 4. 로컬스토리지 저장
 
 
-DevED의 튜토리얼 강의를 듣고 작성하였음.
+DevEd의 튜토리얼 강의를 듣고 작성하였음.
