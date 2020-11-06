@@ -10,11 +10,14 @@ todoButton.addEventListener('click', addTodo);
 // Functions
 function addTodo(event){
   // prevent form from submitting
-  event.preventDefault();
+  // refresh 안되게 하기
+  event.preventDefault(); 
 
   // todo div 할일+버튼1+버튼2 를 포함하는 DIV
   const todoDiv = document.createElement('div');
-  todoDiv.classList.add('todo');
+  todoDiv.classList.add('todo'); 
+  // todo라는 class이름을 div에 적용함
+  // 즉, <div class='todo'> 을 생성한 것임.
 
   // create li
   const newTodo = document.createElement('li');
@@ -31,7 +34,7 @@ function addTodo(event){
   // check  trash button
   const trashButton = document.createElement('button');
   trashButton.innerHTML ='<i class="fas fa-trash"></i>';
-  trashButton.classList.add('complete-btn');
+  trashButton.classList.add('trash-btn');
   todoDiv.appendChild(trashButton);
 
   // append toDo List 
